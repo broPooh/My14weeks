@@ -22,6 +22,13 @@
 		1B964C202852F374004B4C41 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B964C1F2852F374004B4C41 /* MainViewController.swift */; };
 		1B964C222852F62D004B4C41 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B964C212852F62D004B4C41 /* SignInViewModel.swift */; };
 		1B964C242852F693004B4C41 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B964C232852F693004B4C41 /* Observable.swift */; };
+		1B964C262852FFC6004B4C41 /* LottoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B964C252852FFC6004B4C41 /* LottoViewController.swift */; };
+		1B964C28285301F5004B4C41 /* LottoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B964C27285301F5004B4C41 /* LottoView.swift */; };
+		1B964C2A2853034C004B4C41 /* Lotto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B964C292853034C004B4C41 /* Lotto.swift */; };
+		1B964C31285304A1004B4C41 /* LottoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B964C30285304A1004B4C41 /* LottoViewModel.swift */; };
+		1B964C3328531B95004B4C41 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B964C3228531B95004B4C41 /* Person.swift */; };
+		1B964C3628531C75004B4C41 /* PersonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B964C3528531C75004B4C41 /* PersonViewModel.swift */; };
+		1B964C38285331EE004B4C41 /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B964C37285331EE004B4C41 /* PersonViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +46,13 @@
 		1B964C1F2852F374004B4C41 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		1B964C212852F62D004B4C41 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		1B964C232852F693004B4C41 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		1B964C252852FFC6004B4C41 /* LottoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoViewController.swift; sourceTree = "<group>"; };
+		1B964C27285301F5004B4C41 /* LottoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoView.swift; sourceTree = "<group>"; };
+		1B964C292853034C004B4C41 /* Lotto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lotto.swift; sourceTree = "<group>"; };
+		1B964C30285304A1004B4C41 /* LottoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoViewModel.swift; sourceTree = "<group>"; };
+		1B964C3228531B95004B4C41 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		1B964C3528531C75004B4C41 /* PersonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewModel.swift; sourceTree = "<group>"; };
+		1B964C37285331EE004B4C41 /* PersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,12 +88,17 @@
 		1B964BF92852BDEB004B4C41 /* My14weeks */ = {
 			isa = PBXGroup;
 			children = (
+				1B964C3428531C6A004B4C41 /* Person */,
+				1B964C2B28530367004B4C41 /* Lotto */,
 				1B964BFA2852BDEB004B4C41 /* AppDelegate.swift */,
 				1B964C1B2852ED80004B4C41 /* APIService.swift */,
 				1B964C1D2852F045004B4C41 /* User.swift */,
+				1B964C252852FFC6004B4C41 /* LottoViewController.swift */,
+				1B964C27285301F5004B4C41 /* LottoView.swift */,
 				1B964BFC2852BDEB004B4C41 /* SceneDelegate.swift */,
 				1B964C212852F62D004B4C41 /* SignInViewModel.swift */,
 				1B964C232852F693004B4C41 /* Observable.swift */,
+				1B964C3228531B95004B4C41 /* Person.swift */,
 				1B964BFE2852BDEB004B4C41 /* SignInViewController.swift */,
 				1B964C1F2852F374004B4C41 /* MainViewController.swift */,
 				1B964C0E2852E905004B4C41 /* SignInView.swift */,
@@ -89,6 +108,40 @@
 				1B964C082852BDF1004B4C41 /* Info.plist */,
 			);
 			path = My14weeks;
+			sourceTree = "<group>";
+		};
+		1B964C2B28530367004B4C41 /* Lotto */ = {
+			isa = PBXGroup;
+			children = (
+				1B964C2F28530497004B4C41 /* ViewModel */,
+				1B964C2C28530387004B4C41 /* Model */,
+			);
+			path = Lotto;
+			sourceTree = "<group>";
+		};
+		1B964C2C28530387004B4C41 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1B964C292853034C004B4C41 /* Lotto.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1B964C2F28530497004B4C41 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1B964C30285304A1004B4C41 /* LottoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1B964C3428531C6A004B4C41 /* Person */ = {
+			isa = PBXGroup;
+			children = (
+				1B964C3528531C75004B4C41 /* PersonViewModel.swift */,
+				1B964C37285331EE004B4C41 /* PersonViewController.swift */,
+			);
+			path = Person;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,12 +225,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B964C2A2853034C004B4C41 /* Lotto.swift in Sources */,
 				1B964C202852F374004B4C41 /* MainViewController.swift in Sources */,
 				1B964BFF2852BDEB004B4C41 /* SignInViewController.swift in Sources */,
 				1B964C1C2852ED80004B4C41 /* APIService.swift in Sources */,
+				1B964C3328531B95004B4C41 /* Person.swift in Sources */,
 				1B964C1E2852F045004B4C41 /* User.swift in Sources */,
+				1B964C3628531C75004B4C41 /* PersonViewModel.swift in Sources */,
 				1B964C242852F693004B4C41 /* Observable.swift in Sources */,
+				1B964C262852FFC6004B4C41 /* LottoViewController.swift in Sources */,
 				1B964C222852F62D004B4C41 /* SignInViewModel.swift in Sources */,
+				1B964C28285301F5004B4C41 /* LottoView.swift in Sources */,
+				1B964C38285331EE004B4C41 /* PersonViewController.swift in Sources */,
+				1B964C31285304A1004B4C41 /* LottoViewModel.swift in Sources */,
 				1B964BFB2852BDEB004B4C41 /* AppDelegate.swift in Sources */,
 				1B964C0F2852E905004B4C41 /* SignInView.swift in Sources */,
 				1B964BFD2852BDEB004B4C41 /* SceneDelegate.swift in Sources */,
